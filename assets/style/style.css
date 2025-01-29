@@ -45,7 +45,7 @@ body {
     }
   }
 
-  .library {  
+  .library {
     background-color: #121212;
     border-radius: 0.5rem;
     display: flex;
@@ -56,7 +56,7 @@ body {
     font-weight: 600;
     font-size: 0.875rem;
     margin-top: 0.625rem;
-    
+
     .library__content {
       display: flex;
       justify-content: space-between;
@@ -79,5 +79,96 @@ body {
         }
       }
     }
+
+    .playlist {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1.25rem;
+      background-color: #242424;
+      color: #b3b3b3;
+      font-weight: 600;
+      font-size: 0.875rem;
+      margin: 0.5rem 0;
+      padding: 1rem 1.25rem;
+      border-radius: 0.625rem;
+
+      .playlist__content {
+        display: flex;
+        flex-direction: column;
+
+        .text {
+          padding-bottom: 0.875rem;
+          color: #fff;
+          font-family: "DM Sans", sans-serif;
+        }
+
+        .title {
+          font-weight: 700;
+        }
+
+        .subtitle {
+          font-weight: 500;
+          font-size: 0.75rem;
+        }
+
+        .playlist__button {
+          display: flex;
+          justify-content: center;
+          background-color: #fff;
+          color: #000;
+          border-radius: 1.25rem;
+          font-size: 0.75rem;
+          font-weight: 700;
+          font-family: "DM Sans", sans-serif;
+          margin-top: 0.75rem;
+          padding: 0.625rem;
+          border: 0;
+          width: 7.0625rem;
+        }
+      }
+    }
+
+    .cookies {
+      margin: 1.5625rem 1.25rem;
+
+      .cookies__link {
+        color: #b3b3b3;
+        font-weight: 500;
+        font-size: 0.625rem;
+        font-family: "DM Sans", sans-serif;
+        position: relative;
+        transition: all 0.3s ease;
+      }
+
+      .cookies__link::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 0.0625rem;
+        bottom: 0;
+        left: 0;
+        background-color: #b3b3b3;
+        transform: scaleX(0);
+        transition: all 0.3s ease;
+      }
+
+      .cookies__link:hover::before {
+        transform: scaleX(1);
+      }
+    }
+
+    .languages .languages__button {
+      background-color: transparent;
+      border: 0.0625rem solid #878787;
+      border-radius: 1.25rem;
+      color: #fff;
+      align-items: center;
+      font-weight: bold;
+      width: 10.625rem;
+      margin: 0.5rem;
+      padding: 0.5rem;
+    }
   }
+
 }
