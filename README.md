@@ -20,4 +20,4 @@ _Technologies_
 - code . (if you use VSCode)
 - start a live server
 
-## 💻 Online Page: None yet
+## 💻 Online Page: https://spotify-alur.vercel.app
